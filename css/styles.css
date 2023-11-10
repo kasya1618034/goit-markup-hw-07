@@ -282,6 +282,7 @@
       list-style: none;
       gap: 24px;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
     }
   
@@ -404,6 +405,8 @@
     /* Customers */
     .customers-list {
       gap: 24px;
+      display: flex;
+      flex-direction: column;
     }
   
     .customers .container {
