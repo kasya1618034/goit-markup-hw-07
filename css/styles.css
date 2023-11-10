@@ -1293,6 +1293,8 @@
     /* Customers */
     .customers-list {
       gap: 24px;
+      display: flex;
+      flex-wrap: wrap;
     }
   
     .customers .container {
