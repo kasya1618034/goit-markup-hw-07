@@ -45,7 +45,7 @@
           </ul>
         </address>
         <div class="menu-mobile">
-          <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <button class="menu-toggle js-open-menu hamburger-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
             <svg width="32" height="22">
               <use href="./images/icons.svg#icon-hamburger"></use>
             </svg>
@@ -138,7 +138,11 @@
           <h2 class="sections-headline">Our Team</h2>
           <ul class="team-card list">
             <li class="team-element">
-              <img class="team-image" src="images/our-team/our-team-1.jpg" alt="a man with brown eyes and short stubble wearing a blue shirt" width="264" height="260">
+              <img class="team-image images" 
+                src="images/our-team/our-team-1.jpg"
+                srcset="./images/our-team/our-team-1.jpg x1, ./images/our-team/our-team-1@2x.jpg x2" 
+                alt="a man with brown eyes and short stubble wearing a blue shirt"
+                width="264" height="260">
               <div class="container team-data">
                 <h3 class="card-headline">Mark Guerrero</h3>
                 <p class="card-paragraph">Product Designer</p>
@@ -175,7 +179,11 @@
               </div>
             </li>
             <li class="team-element">
-              <img class="team-image" src="images/our-team/our-team-2.jpg" alt="a man with blue eyes wearing a blue shirt " width="264" height="260">
+              <img class="team-image images" 
+                src="images/our-team/our-team-2.jpg"
+                srcset="./images/our-team/our-team-2.jpg x1, ./images/our-team/our-team-2@2x.jpg x2"
+                alt="a man with blue eyes wearing a blue shirt " 
+                width="264" height="260">
               <div class="container team-data">
                 <h3 class="card-headline">Tom Ford</h3>
                 <p class="card-paragraph">Frontend Developer</p>
@@ -212,7 +220,11 @@
               </div>
             </li>
             <li class="team-element">
-              <img class="team-image" src="images/our-team/our-team-3.jpg" alt="a woman with long brown hair and brown eyes in a pink sweater" width="264" height="260">
+              <img class="team-image images" 
+                src="images/our-team/our-team-3.jpg"
+                srcset="./images/our-team/our-team-3.jpg x1, ./images/our-team/our-team-3@2x.jpg x2" 
+                alt="a woman with long brown hair and brown eyes in a pink sweater" 
+                width="264" height="260">
               <div class="container team-data">
                 <h3 class="card-headline">Camila Garcia</h3>
                 <p class="card-paragraph">Marketing</p>
@@ -249,7 +261,11 @@
               </div>
             </li>
             <li class="team-element">
-              <img class="team-image" src="images/our-team/our-team-4.jpg" alt="a man with short stubble in grey t-shirt " width="264" height="260">
+              <img class="team-image images" 
+                src="images/our-team/our-team-4.jpg"
+                srcset="./images/our-team/our-team-4.jpg x1, ./images/our-team/our-team-4@2x.jpg x2" 
+                alt="a man with short stubble in grey t-shirt " 
+                width="264" height="260">
               <div class="container team-data">
                 <h3 class="card-headline">Daniel Wilson</h3>
                 <p class="card-paragraph">UI Designer</p>
@@ -459,7 +475,7 @@
     </div>
 
     <!--menu-mobile-->
-    <div class="js-menu-container" id="mobile-menu">
+    <div class="js-menu-container menu-mobile-main" id="mobile-menu">
       <div class="menu-mobile-container">
         <div class="mobile-button-container">
           <button class="js-close-menu menu-mobile-close">
