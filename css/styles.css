@@ -792,6 +792,10 @@
       display: flex;
     }
 
+    .menu-mobile-container {
+      display: none;
+    }
+
     .hamburger-button {
       border: none;
     }
