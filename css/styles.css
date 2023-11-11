@@ -6,6 +6,7 @@
   padding: 0;
 }
 
+
 :root {
   --primary-color: #4D5AE5;
   --dark-color: #2E2F42;
@@ -487,7 +488,6 @@ body {
     .footer-text {
       display: flex;
       flex-direction: column;
-      margin-bottom: 72px;
     }
   
     .page-footer .logo {
@@ -515,6 +515,7 @@ body {
     .footer-ind-paragraph {
       font-weight: 500;
       color: var(--white);
+      margin-top: 72px;
       margin-bottom: 16px;
       text-align: center;
     }
