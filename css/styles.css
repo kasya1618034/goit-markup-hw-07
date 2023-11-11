@@ -241,12 +241,12 @@
       list-style: none;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       gap: 72px;
     }
   
     .features-list .list-item {
-      width: calc((100% - 72px) / 4);
-      flex-basis: auto;
+      width: 100%;
     }
   
     .list-item svg {
@@ -266,11 +266,11 @@
     }
   
     .features-headline {
-      font-weight: 500;
-      font-size: 20px;
+      font-weight: 700;
+      font-size: 36px;
       line-height: 1.2;
       letter-spacing: 0.02em;
-      text-align: left;
+      text-align: center;
       color: var(--dark-color);
       margin-bottom: 8px;
     }
@@ -298,17 +298,22 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       gap: 72px;
     }
   
     .team-element {
       background-color: var(--white);
       border-radius: 0px 0px 4px 4px;
-      width: calc((100% - 72px) / 4);
-      flex-basis: auto;
+      width: 100%;
       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+    .team-card .team-image {
+      display: block;
+      width: 100%;
     }
   
     .team-socials-item {
@@ -391,9 +396,12 @@
   
     /* Customers */
     .customers-list {
-      gap: 24px;
+      column-gap: 24px;
+      row-gap: 72px;
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 96px;
     }
   
     .customers .container {
@@ -401,7 +409,7 @@
     }
   
     .customers-item {
-      width: calc((100% - 120px) / 6);
+      width: calc((100% - 110px) / 2);
       height: 88px;
     }
   
@@ -783,6 +791,10 @@
     .menu-mobile {
       display: flex;
     }
+
+    .hamburger-button {
+      border: none;
+    }
 }
 
 /* Tablet */
@@ -918,12 +930,21 @@
       margin: 0 auto;
       color: var(--white);
       padding: 188px 0;
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office-tablet.jpg);
       max-width: 1440px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office-tablet@2x.jpg);
+          }
+        }
   
     .hero-headline {
       line-height: 1.07;
@@ -967,12 +988,11 @@
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       gap: 24px;
     }
   
     .features-list .list-item {
-      width: calc((100% - 72px) / 4);
       flex-basis: auto;
     }
   
@@ -1690,12 +1710,21 @@
       margin: 0 auto;
       color: var(--white);
       padding: 188px 0;
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office-desktop.jpg);
       max-width: 1440px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
     }
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office-desktop@2x.jpg);
+        }
+      }
   
     .hero-headline {
       line-height: 1.07;
