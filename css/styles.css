@@ -581,7 +581,6 @@ body {
       display: inline-block;
     }
   
-  
     .signup-button {
       min-width: 165px;
       height: 40px;
@@ -895,7 +894,6 @@ body {
       flex-direction: column;
       gap: 40px;
       list-style: none;
-
     }
 
     .nav-mobile-link {
@@ -1001,44 +999,47 @@ body {
 /* Tablet */
 
 @media screen and (min-width: 768px) {
- 
-    /* Menu */
-    .container {
-      max-width: 1158px;
-      margin: 0 auto;
-      padding: 0 15px;
-    }
+  .container {
+    max-width: 1157px;
+  }
   
-    .section {
-      padding-top: 96px;
-      padding-bottom: 96px;
-    }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  /* Menu */
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .page-header {
+    border-bottom: 1px solid var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
   
-    .page-header {
-      border-bottom: 1px solid var(--accent-color);
-      box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    }
+  .page-header .container {
+    display: flex;
+    justify-content: space-between;
+  }
   
-    .page-header .container {
-      display: flex;
-    }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
   
-    .navigation {
-      display: flex;
-      align-items: center;
-    }
-  
-    .navigation .logo {
-      font-family: 'Raleway', sans-serif;
-      font-size: 18px;
-      text-decoration: none;
-      font-weight: 800;
-      line-height: 1.17;
-      letter-spacing: 0.03em;
-      margin-right: 76px;
-      text-transform: uppercase;
-      color: var(--primary-color);
-    }
+  .navigation .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-right: 76px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
   
     .navigation .list-item {
       margin-right: 40px;
@@ -1236,29 +1237,6 @@ body {
       display: none;
     }
   
-    .we-do .list {
-      list-style: none;
-      gap: 24px;
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .list.do-item {
-      width: calc((100% - 48px) / 3);
-      flex-basis: auto;
-    }
-  
-    .sections-headline {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.11;
-      text-align: center;
-      letter-spacing: 0.02em;
-      text-transform: capitalize;
-      color: var(--dark-color);
-      margin-bottom: 72px;
-    }
-  
     /* our team*/
     .team {
       background-color: var(--light);
@@ -1361,9 +1339,12 @@ body {
   
     /* Customers */
     .customers-list {
-      gap: 24px;
+      column-gap: 24px;
+      row-gap: 72px;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 96px;
     }
   
     .customers .container {
@@ -1371,7 +1352,7 @@ body {
     }
   
     .customers-item {
-      width: calc((100% - 120px) / 6);
+      width: calc((100% - 216px) / 3);
       height: 88px;
     }
   
@@ -1412,17 +1393,22 @@ body {
       color: var(--light);
       background-color: var(--dark-color);
       letter-spacing: 0.02em;
-      padding: 100px 0;
+      padding: 96px 0;
     }
   
     .page-footer .container {
       display: flex;
-      align-items: baseline;
-      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 24px;
     }
   
     .footer-text {
-      margin-right: 120px;
+      margin-bottom: 72px;
+      display: flex;
+      flex-direction: column;
     }
   
     .page-footer .logo {
@@ -1489,6 +1475,7 @@ body {
   
     .footer-form {
       display: flex;
+      flex-wrap: wrap;
       gap: 24px;
     }
   
@@ -1506,7 +1493,6 @@ body {
       border-radius: 4px;
       display: inline-block;
     }
-  
   
     .signup-button {
       min-width: 165px;
@@ -1527,7 +1513,7 @@ body {
     .signup-icon {
       margin-left: 16px;
       fill: var(--white);
-    }
+    } 
   
     /*Modal*/
     .modal-window {
@@ -1742,6 +1728,10 @@ body {
       transition-duration: var(--tr-duration);
       transition-timing-function: var(--tr-fn);
     }
+
+  .menu-mobile-main {
+    display: none;
+  }
 }
 
 /* Not desctop */
