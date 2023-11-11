@@ -819,10 +819,6 @@ body {
       margin-right: 16px;
     }
 
-    .menu-mobile-container {
-      display: none;
-    }
-
     .hamburger-button {
       border: none;
       background-color: var(--white);
