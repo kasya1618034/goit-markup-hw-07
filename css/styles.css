@@ -814,6 +814,9 @@ body {
 
     .menu-mobile {
       display: flex;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      margin-right: 16px;
     }
 
     .menu-mobile-container {
@@ -822,6 +825,21 @@ body {
 
     .hamburger-button {
       border: none;
+      background-color: var(--white);
+      stroke: var(--dark-color);
+    }
+
+    .menu-mobile-main {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      padding: 32px;
+      background-color: #3f51b5;
+      z-index: 999;      
+      transform: translateX(100%);
+      transition: transform 250ms ease-in-out;
     }
 }
 
