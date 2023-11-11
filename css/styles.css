@@ -887,6 +887,8 @@ body {
       display: flex;
       flex-direction: column;
       gap: 40px;
+      list-style: none;
+
     }
 
     .nav-mobile-link {
@@ -917,11 +919,13 @@ body {
       flex-direction: column;
       gap: 40px;
       padding-left: 40px;
+      list-style: none;
     }
 
     .mobile-contact {
       font-family: Roboto;
       font-style: normal;
+      list-style: none;
     }
 
     .mobile-phone {
@@ -967,6 +971,11 @@ body {
     .mobile-socials-link:hover,
     .mobile-socials-link:focus {
       background-color: var(--valid);
+    }
+
+    .mobile-socials-item {
+      width: 40px;
+      height: 40px;
     }
 
 }
