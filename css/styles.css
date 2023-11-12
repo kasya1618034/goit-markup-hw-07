@@ -1400,6 +1400,7 @@ body {
       align-items: flex-start;
       justify-content: flex-start;
       gap: 24px;
+      margin-left: 108px;
     }
   
     .footer-text {
