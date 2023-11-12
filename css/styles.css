@@ -69,6 +69,10 @@ body {
     margin: 0 auto;
   }
 
+  .container {
+    max-width: 428px;
+  }
+
     /* Menu */
   
     .section {
@@ -1000,7 +1004,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .container {
-    max-width: 1157px;
+    max-width: 768px;
   }
   
   .section {
@@ -1755,19 +1759,6 @@ body {
       text-decoration: none;
       background-color: var(--white);
       margin: 0 auto;
-    }
-  
-    .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
     }
 
     .menu-mobile {
