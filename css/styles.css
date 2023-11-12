@@ -2026,7 +2026,7 @@ body {
   }
 
   .team .container {
-    padding: 96px 0;
+    padding: 96px 108px;
   }
 
   .container .sections-headline {
@@ -2138,11 +2138,11 @@ body {
   /* Customers */
   .customers-list {
     column-gap: 24px;
+    margin-top: 72px;
     row-gap: 72px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 96px;
   }
   
   .customers .container {
