@@ -2040,6 +2040,11 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 24px;
+      padding-top: 72px; 
+    }
+
+    .team-image.images {
+      width: 100%;
     }
   
     .team-element {
@@ -2094,10 +2099,6 @@ body {
   
     .team-element .container {
       max-width: 264px;
-    }
-  
-    .team-element.team-image {
-      display: block;
     }
   
     .card-headline {
