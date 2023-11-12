@@ -127,7 +127,7 @@ body {
     color: var(--white);
     padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office-mobile@1x.jpg);
-    max-width: 767px;
+    max-width: 1140px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -147,7 +147,7 @@ body {
       line-height: 1.07;
       text-align: center;
       letter-spacing: 0.02em;
-      font-size: 56px;
+      font-size: 36px;
       max-width: 496px;
       margin: 0 auto;
       margin-bottom: 48px;
@@ -188,25 +188,13 @@ body {
       align-items: flex-start;
       gap: 72px;
     }
+
+    .features .container {
+      padding: 96px 16px;
+    }
   
     .features-list .list-item {
       width: 100%;
-    }
-  
-    .list-item svg {
-      width: 64px;
-      height: 64px;
-      border-radius: 4px;
-    }
-  
-    .features-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 112px;
-      background-color: var(--light);
-      border-radius: 4px;
-      margin-bottom: 8px;
     }
   
     .features-headline {
@@ -235,7 +223,10 @@ body {
     /* our team*/
     .team {
       background-color: var(--light);
-      padding-bottom: 72px;
+    }
+
+    .team .container {
+      padding: 96px 0;
     }
   
     .team-card.list {
@@ -245,6 +236,7 @@ body {
       justify-content: center;
       align-items: center;
       gap: 72px;
+      margin: 0 auto;
     }
   
     .team-element {
@@ -263,7 +255,6 @@ body {
   
     .container .sections-headline {
       text-align: center;
-      display: flex;
       color: var(--dark-color);
       font-size: 36px;
       font-weight: 700;
@@ -362,7 +353,7 @@ body {
     }
   
     .customers .container {
-      max-width: 1128px;
+      padding-top: 96px;
     }
   
     .customers-item {
@@ -407,7 +398,7 @@ body {
       color: var(--light);
       background-color: var(--dark-color);
       letter-spacing: 0.02em;
-      padding: 96px 0;
+      padding: 72px 0;
     }
   
     .page-footer .container {
@@ -445,7 +436,7 @@ body {
     }
   
     .footer-ind-paragraph {
-      font-weight: 500;
+      font-weight: 400;
       color: var(--white);
       margin-top: 72px;
       margin-bottom: 16px;
@@ -492,6 +483,7 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       gap: 16px;
+      padding: 16px;
     }
   
     .footer-text .logo {
@@ -501,9 +493,9 @@ body {
     .footer-mail {
       color: var(--white);
       background-color: transparent;
-      width: 398px;
+      width: 100%;
       height: 40px;
-      padding: 15px;
+      padding: 16px;
       font-size: 12px;
       line-height: 1.5;
       letter-spacing: 0.04em;
@@ -563,13 +555,13 @@ body {
       transform: translate(-50%, -50%) scale(1);
       background-color: var(--modal-background);
       border-radius: 4px;
-      min-width: 408px;
+      min-width: 320px;
       min-height: 584px;
       transition-property: transform;
       transition-duration: var(--tr-duration);
       transition-timing-function: var(--tr-fn);
       box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-      padding: 72px 24px 24px 24px;
+      padding: 72px 16px 24px 16px;
     }
   
     .button-close {
@@ -619,7 +611,7 @@ body {
     }
   
     .modal-form-element.comment-element {
-      margin-bottom: 16px;
+      margin-bottom: 6px;
     }
   
     .modal-label {
@@ -873,7 +865,6 @@ body {
       font-weight: 700;
       line-height: 40px;
       letter-spacing: 0.72px;
-  
     }
   
     .mobile-mail {
@@ -944,7 +935,6 @@ body {
     padding: 72px 24px 24px 24px;
   }
 }
-
 
 /*Mobile more than 428px */
 
@@ -1066,33 +1056,21 @@ body {
     }
   
     /* Section Features*/
-  
+    .features .container {
+      padding: 96px 0;
+    }
+
     .features-list {
       list-style: none;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 72px;
+      padding: 16px;
     }
   
     .features-list .list-item {
       width: 100%;
-    }
-  
-    .list-item svg {
-      width: 64px;
-      height: 64px;
-      border-radius: 4px;
-    }
-  
-    .features-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 112px;
-      background-color: var(--light);
-      border-radius: 4px;
-      margin-bottom: 8px;
     }
   
     .features-headline {
@@ -1121,7 +1099,7 @@ body {
     /* our team*/
     .team {
       background-color: var(--light);
-      padding-bottom: 72px;
+      padding: 96px 0;
     }
   
     .team-card.list {
@@ -1149,7 +1127,6 @@ body {
 
     .container .sections-headline {
       text-align: center;
-      display: flex;
       color: var(--dark-color);
       font-size: 36px;
       font-weight: 700;
@@ -1238,6 +1215,9 @@ body {
     }
   
     /* Customers */
+    .customers .container {
+      padding: 96px 0;
+    }
     .customers-list {
       column-gap: 24px;
       row-gap: 72px;
@@ -1245,10 +1225,6 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       padding-bottom: 96px;
-    }
-  
-    .customers .container {
-      max-width: 1128px;
     }
   
     .customers-item {
@@ -1515,7 +1491,6 @@ body {
       color: var(--subtle-text);
       display: block;
       margin-bottom: 4px;
-  
     }
   
     .modal-entry-field {
