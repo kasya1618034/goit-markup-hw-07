@@ -1102,13 +1102,12 @@ body {
   
     .contact-data {
       font-style: normal;
-      margin-left: auto;
-      padding-top: 24px;
-      padding-bottom: 24px;
     }
   
     .contact-data .list {
-      gap: 40px;
+      gap: 12px;
+      display: flex;
+      flex-direction: column;
     }
   
     .contact.link {
