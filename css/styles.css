@@ -108,30 +108,30 @@ body {
     color: var(--primary-color);
   }
   
-    .logo.link {
-      text-decoration: none;
-    }
+  .logo.link {
+    text-decoration: none;
+  }
   
-    .span {
-      color: var(--dark-color);
-    }
+  .span {
+    color: var(--dark-color);
+  }
   
-    .list {
-      list-style: none;
-      display: none;
-    }
+  .list {
+    list-style: none;
+    display: none;
+  }
   
-    /* Hero section */
-    .hero {
-      margin: 0 auto;
-      color: var(--white);
-      padding: 112px 0;
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office-mobile@1x.jpg);
-      max-width: 767px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
+  /* Hero section */
+  .hero {
+    margin: 0 auto;
+    color: var(--white);
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office-mobile@1x.jpg);
+    max-width: 767px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -990,14 +990,6 @@ body {
       color: var(--primary-color);
     }
   
-    .navigation .list-item {
-      margin-right: 40px;
-    }
-  
-    .navigation .list-item:last-child {
-      margin-right: 0;
-    }
-  
     .logo.link {
       text-decoration: none;
     }
@@ -1014,7 +1006,6 @@ body {
       list-style: none;
       display: none;
     }
-  
   
     /* Hero section */
     .hero {
