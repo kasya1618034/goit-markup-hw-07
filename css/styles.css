@@ -2142,7 +2142,7 @@ body {
   }
   
   .customers .container {
-    padding: 24px 0;
+    padding: 0 24px;
     margin: 96px auto;
   }
   
@@ -2275,6 +2275,7 @@ body {
 
   .footer-form {
     display: flex;
+    justify-content: space-between;
     gap: 24px;
   }
 
