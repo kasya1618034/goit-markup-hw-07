@@ -2142,8 +2142,8 @@ body {
   }
   
   .customers .container {
-    padding: 24px;
-    margin: 0 auto;
+    padding: 24px 0;
+    margin: 96px auto;
   }
   
   .customers-item {
@@ -2199,6 +2199,7 @@ body {
     width: 100%;
     column-gap: 24px;
     row-gap: 72px;
+    margin: 0 auto;
   }
   
   .footer-text {
