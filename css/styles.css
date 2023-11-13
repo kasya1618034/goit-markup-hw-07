@@ -1792,7 +1792,6 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1157px){
   .container {
-    width: 768px;
     margin: 0 auto;
   }
 
@@ -1975,6 +1974,7 @@ body {
   
   .features .container {
     padding: 96px 0;
+    margin: 0 auto;
   }
 
   .features-list {
@@ -1982,12 +1982,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 24px;
     row-gap: 72px;
   }
   
   .features-list .list-item {
-    width: calc(100% - 24px) / 2;
+    width: calc((100% - 24px) / 2);
     flex-basis: auto;
   }
   
@@ -2138,10 +2137,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   
   .customers .container {
-    padding: 96px 0;
+    padding: 96px;
+    margin: 0 auto;
   }
   
   .customers-item {
