@@ -2188,7 +2188,7 @@ body {
     color: var(--light);
     background-color: var(--dark-color);
     letter-spacing: 0.02em;
-    padding: 96px 0;
+    padding: 96px;
   }
 
   .page-footer .tablet-footer-container {
@@ -2196,10 +2196,15 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
     width: 100%;
     column-gap: 24px;
     row-gap: 72px;
     margin: 0 auto;
+  }
+
+  .page-footer .tablet-footer-container:last-child {
+    justify-content: flex-start;
   }
   
   .footer-text {
@@ -2275,7 +2280,7 @@ body {
 
   .footer-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
   }
 
