@@ -1983,6 +1983,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 72px;
+    column-gap: 24px;
   }
   
   .features-list .list-item {
@@ -2141,12 +2142,13 @@ body {
   }
   
   .customers .container {
-    padding: 96px;
+    padding: 24px;
     margin: 0 auto;
   }
   
   .customers-item {
     width: calc((100% - 216px) / 3);
+    flex-basis: auto;
     height: 88px;
   }
   
@@ -2189,17 +2191,17 @@ body {
     padding: 96px 0;
   }
 
-  .page-footer .container {
+  .page-footer .tablet-footer-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 24px;
+    width: 100%;
+    column-gap: 24px;
+    row-gap: 72px;
   }
   
   .footer-text {
-    margin-bottom: 72px;
     display: flex;
     flex-direction: column;
   }
@@ -2272,7 +2274,6 @@ body {
 
   .footer-form {
     display: flex;
-    flex-wrap: wrap;
     gap: 24px;
   }
 
